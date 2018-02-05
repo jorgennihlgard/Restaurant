@@ -15,6 +15,11 @@ namespace Restaurant.Data
         {
         }
 
+        public DbSet<Table> Tables { get; set; }
+        public DbSet<OpeningHour> OpeningHours { get; set; }
+        public DbSet<Guest> Guests { get; set; }
+        public DbSet<Sitting> Sittings { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
